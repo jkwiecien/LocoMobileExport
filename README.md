@@ -15,6 +15,8 @@ shloco_exporter.sh android --key <loco-api-key> --map "values-sv=values" --tag "
 # This imports all the Swedish plural strings that are shared or android specific as app default language
 sh loco_exporter.sh android --key <loco-api-key> --map "values-sv=values" --tag "plurals" --plurals true --output "src/se/res"
 ```
+
+### iOS example
 //TODO
 
 ## Options
