@@ -6,6 +6,15 @@ An exporter script for Localise.biz projects for iOS and Android projects
 1. Put ```loco_exporter.sh``` in your project folder.
 2. Run script with the desired options
 
+
+### Android example
+Script placed in the app module, not the root folder.
+```
+# This imports all the Swedish strings that are shared or android specific as app default language
+sh loco_import.sh android --key <loco-api-key> --map "values-sv=values" --tag "shared,android" --output "src/se/res"
+# This imports all the Swedish plural strings that are shared or android specific as app default language
+sh loco_import.sh android --key <loco-api-key> --map "values-sv=values" --tag "plurals" --plurals true --output "src/se/res"
+```
 //TODO
 
 ## Options
