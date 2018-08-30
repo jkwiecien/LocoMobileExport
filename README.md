@@ -28,6 +28,8 @@ sh loco_import.sh ios --key <loco-api-key> --map "sv=sv" --tag "plurals" --plura
 sh loco_import.sh ios --key <loco-api-key> --map "sv=sv" --map "no=no" --tag "shared,ios" --output "viktklubbapp"
 ```
 
+[Clipy](https://clipy-app.com/) is a great help for having a quick access to code snippets like this one.
+
 ## Options
 
 Option | Explanation
@@ -39,3 +41,5 @@ Option | Explanation
 --map (Android) | use `--map 'values-sv=values'`, can map as many as you want to meet your project setup. If you support multiple languages use like `--map 'values-sv=values-sv' --map 'values-no=values-no'`. Right side is your project value folder. If you do  `--map 'values-sv=values'` you'll be getting Swedish as a default language.
 --tags (optional) | Coma separated Loco tags
 --plurals (optional) | `true` if resources should be exported as plural resource file
+
+
