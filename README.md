@@ -25,7 +25,7 @@ sh loco_import.sh ios --key <loco-api-key> --map "sv=sv" --tag "shared,ios" --ou
 # This imports the Swedish plural strings, --output (in this case viktklubbapp) is path to directory containing *.lproj relative to where import script is
 sh loco_import.sh ios --key <loco-api-key> --map "sv=sv" --tag "plurals" --plurals true  --output "viktklubbapp"
 # This imports the Swedish and Norwegian strings that are shared or ios specific, --output (in this case viktklubbapp) is path to directory containing *.lproj relative to where import script is
-sh loco_import.sh ios --key <loco-api-key> --map "sv=sv" --map "no=no" --tag "shared,ios" --output "viktklubbapp"
+sh loco_import.sh ios --key <loco-api-key> --map "sv=sv" --map "no=nb" --tag "shared,ios" --output "viktklubbapp"
 ```
 
 [Clipy](https://clipy-app.com/) is a great help for having a quick access to code snippets like this one.
