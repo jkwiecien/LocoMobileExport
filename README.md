@@ -10,14 +10,23 @@ An exporter script for Localise.biz projects for iOS and Android projects
 ### Android example
 Script placed in the app module, not the root folder.
 ```
-# This imports all the Swedish strings that are shared or android specific as app default language
+# This imports the Swedish strings that are shared or android specific as app default language
 shloco_exporter.sh android --key <loco-api-key> --map "values-sv=values" --tag "shared,android" --output "src/se/res"
-# This imports all the Swedish plural strings that are shared or android specific as app default language
+# This imports the Swedish plural strings that are shared or android specific as app default language
 sh loco_exporter.sh android --key <loco-api-key> --map "values-sv=values" --tag "plurals" --plurals true --output "src/se/res"
+# This imports the English, Swedish and Norwegian (multilangual project) strings that are shared or android specific as app default language. English as default.
+sh loco_exporter.sh android --key <loco-api-key> --map "values-en=values"  --map "values-sv=values-sv" --map "values-no=values-no" --tag "shared, android" --plurals true --output "src/se/res"
 ```
 
 ### iOS example
-//TODO
+```
+# This imports the Swedish strings that are shared or ios specific, --output (in this case viktklubbapp) is path to directory containing *.lproj relative to where import script is
+sh loco_import.sh ios --key <loco-api-key> --map "sv=sv" --tag "shared,ios" --output "viktklubbapp"
+# This imports the Swedish plural strings, --output (in this case viktklubbapp) is path to directory containing *.lproj relative to where import script is
+sh loco_import.sh ios --key <loco-api-key> --map "sv=sv" --tag "plurals" --plurals true  --output "viktklubbapp"
+# This imports the Swedish and Norwegian strings that are shared or ios specific, --output (in this case viktklubbapp) is path to directory containing *.lproj relative to where import script is
+sh loco_import.sh ios --key <loco-api-key> --map "sv=sv" --map "no=no" --tag "shared,ios" --output "viktklubbapp"
+```
 
 ## Options
 
